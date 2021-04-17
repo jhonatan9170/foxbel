@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.body{
+    background-color: #ffffff;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+/*---Estilos del nav---*/
+nav{
+    background: #662323;
+    width: 20%;
+    max-width: 60%;
+    height: auto;
+    padding: 2% 2px 2px 2%;
+    color: white;
+    overflow: hidden;
+}
+nav img{
+    width: 90%;
+    height: auto;
+    margin-bottom: 40px;
+}
+nav .cerrar{
+    display: none;
+}
+nav .cerrar:hover{
+    background-color: #E86060;
+    border: 0;
+}
+nav .links{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+nav .links li{
+    list-style: none;
+    margin-bottom: 10px;
+    height: auto;
+}
+nav .links a{
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    margin-right: 10px;
+    padding: 2px 6px;
+}
+nav .links a:hover{
+    border-left: 2px solid #E86060;
+    color: #E86060;
+}
+
+/*---Estilos del section---*/
+section{
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    margin-bottom: 10%;
+}
+section .top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4vh;
+}
+section .burger{
+    display: none;
+}
+section .formulario{
+    display: flex;
+}
+section input[type=text],select{
+    width: 100%;
+    padding: 5px 40px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+section .btn[type="submit"] {
+    background-color: #E86060;
+    color: white;
+    border-radius: 100px;
+    height: 25px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 9px;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+section input[type=text]:focus, input[type=submit]{
+    outline:none;
+}
+section .data-user{
+    display: flex;
+    float: right;
+    align-self: center;
+}
+section .data-user img{
+    width: 20px;
+    height: auto;
+    margin-right: 14px;
+}
+
+section .card-container{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    background: #db55559f;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+section .card-container img{
+    width: 390px;
+    height: auto;
+    border-radius: 10px 0px 0px 10px;
+}
+section .card-container .info-principal{
+    padding:30px;
+}
+
+section .card-container h1{
+    color: white;
+    font-weight: bold;
+}section .card-container h4{
+    color: white;
+    font-weight: lighter;
+}
+section .card-container  p{
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+section .reproducir[type=submit]{
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    margin-top: 50px;
+    padding: 15px 40px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background-color: #E86060;
+    border: 0px;
+    color: white;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #771d1d,
+                -5px -5px 15px white;
+}
+section .seguir[type=submit]{
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border-radius: 100px;
+    background: #9b969600;
+    color: #ffffff;
+    border: 2px solid #E86060;
+    box-sizing: border-box;
+    letter-spacing: 4px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+section form{
+    display: inline-block;
+}
+section .reproducir[type=submit]:hover{
+    background-color: #ffffff;
+    color: #E86060;
+}
+section .seguir[type=submit]:hover{
+    background-color: #ffffff;
+    color: #E86060;
+    border: 0px;
+}
+section .result{
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+}
+section .result h1:nth-child(1){
+    color:#E86060;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section .artistas{
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    margin: 0 30px 30px 0px;
+    box-shadow: 2px 2px 10px #6d6d6d44;
+}
+section .artistas img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+section .artistas h4{
+    margin: 5px 0px;
+}
+
+footer{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    margin-top: 200%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EB5757;
+}
+footer div:nth-child(2), div:nth-child(3){
+    margin-top: 10px;
+}
+
+footer .infoCancion{
+    display: flex;
+    width: 205px;
+    height: auto;
+    color: white;
+    display: flex;
+}
+
+footer .infoCancion img{
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+}
+footer .atributosCancionFooter p{
+    display: inline;
+}
+footer button{
+    margin-top: 12px;
+    height: auto;
+    background-color: #f0f8ff00;
+    border: 0;
+}
+footer .controles button[img]:focus{
+    outline:none;
+}
+footer .controles img{
+    width: 40px;
+    height: auto;
+    border-radius: 7px;
+    transition: 0.2s ease-in-out;
+}
+footer .controles img:hover{
+    opacity: 40%;
+}
+footer .controlVolumen{
+    margin-top:40px;
+    margin-right: 90px;
+}
+footer input[type=range]{
+    -webkit-appearance: none; 
+    height:5px;
+    width:100%;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+footer input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 0px; 
+  }
+
+  footer input[type=range]:focus {
+    outline: none;
+  }
+
+@media screen and (max-width:800px){
+    nav.responsive{
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        padding-right: 10px;
+        padding-top: 2px;
+    }
+    nav img{
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    nav .cerrar{
+        display: block;
+        border: 1px solid white;
+        height: auto;
+        padding: 2px 1px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    nav .links{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    nav .links li{
+        list-style: none;
+        margin-bottom: 2px;
+        height: auto;
+    }
+    section{
+        margin-left: 0px;
+    }
+    section .burger{
+        display: block;
+        border: 1px solid #E86060;
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+        border-radius: 3px;
+        margin: 0px;
+    }
+    section .burger .line{
+        width: 15px;
+        color: #E86060;
+        height: 1px;
+        margin:6px ;
+        background-color: #E86060;
+    }
+    section .card-container{
+        width: 100%;
+        height: auto;
+    }
+    section .card-container img{
+        width: 170px;
+        height: auto;
+    }
+    footer input[type=range]{
+        float: right;
+        border:1px solid white;
+    }
+}
+@media screen and (max-width:604px){
+
+    footer .controlVolumen{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width:517px){
+    nav{
+        position: fixed;
+        width: 900px;
+        height: 100%;
+        padding-right: 10px;
+    }
+    section .top{
+        display: inline-block;
+    }
+    section .card-container{
+        display: block;
+    }
+    section .card-container img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+@media screen and (max-width:470px){
+
+    footer .controles{
+        text-align: center;
+    }
+    footer{
+        display: block;
+        height: 30% ;
+    }
+}
+@media screen and (max-width:359px){
+
+    section .reproducir[type=submit]{
+        padding: 15px 10px;
+        width: 140px;
+        min-width: 140px;
+    }
+    section .seguir[type=submit]{
+        padding: 15px 10px;
+        width: 140px;
+        min-width: 140px;
+    }
+
+        
+}
